@@ -1,6 +1,7 @@
 with open("ki.txt", "r") as f:
     adatok = f.read()
-    adatok = adatok.split(";")
+    adatok = adatok.rstrip(";").split(";")
+    
 
 def szam(list):
     try:
