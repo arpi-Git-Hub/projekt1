@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="project.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> 
+   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap">
+    <title>Rendezesi Algoritmusok,Random szam generalasa</title>
+</head>
+<body>
+    <section id="banner2">
+       <div class="banner-text">
+           <h1>Rendezesi Algoritmusok</h1>
+         
+       </div>
+       <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index (1).html">Home</a></li>
+                <li><a href="erd.html">Fogalmak</a></li>
+                <li><a href="kep.html">Képek</a></li>
+            </ul>
+        </nav>
+
+    </div>
+ <h1 id="aag">A buborékrendezés</h1>
+       <p id="aas"> A buborékrendezés egy egyszerű algoritmus, amelyet főleg az oktatásban használunk, mivel nem igazán hatékony. Elve, hogy egy „buborékkal” haladva a tömbben több menetben elölről hátra a buborékban szereplő két elemet felcseréljük, ha azok rossz sorrendben vannak.Stabil rendezés.</p>
+        <h1 id="aag">Gyorsrendezés</h1>
+        <p id="aas">Az egyik legnépszerűbb rendezési algoritmus, amely átlagos esetben gyorsabb, mint a többi algoritmus, viszont hátránya hogy a legrosszabb esetben lassú, és nem stabil rendezés.
+
+            Rekurzív algoritmus, kettéosztja a rendezendő listát egy kiemelt elemnél kisebb és nagyobb elemekre, majd a részekre külön-külön alkalmazza a gyorsrendezést.</p>
+            <h1 id="aag">Beszúró rendezés</h1>
+            <p id="aas">Az emberi gondolkodáshoz közel álló algoritmus, amely egyszerre egy elemet visz a helyére.
+
+                Stabil rendezés.</p>
+               <h1 id="aag">Kupacrendezés</h1>
+                <p id="aas">A kupacrendezés a használt adatszerkezetről kapta a nevét, a kupacról. Működése során felépíti a kupacot, majd egyesével kiemeli a gyökérelemet, ami a kupac definíciója miatt a legnagyobb/legkisebb elem lesz.
+
+                    Nem stabil rendezés.</p>
+        a        <h1 id="aag">Nem összehasonlító rendezések</h1>
+                <p id="aas">Ezek az algoritmusok nem használják az elemek között fennálló rendezési műveletet (ha egyáltalán van ilyen) az elemek összehasonlítására, ezért általában valamely más, speciálisabb követelményt támasztanak, ezért általános esetben nem használjuk őket.
+
+                    Jelölések: n az elemek száma, k a kulcsérték mérete. Az algoritmusok feltételezik hogy a kulcsok egyediek és hogy n << 2k (n lényegesen kisebb, mint 2k).</p>
+        a        <h1 id="aag">Edényrendezés</h1>
+                <p id="aas">Az algoritmus során edényekbe, kategóriákba helyezzük az elemeket a kulcsértékük alapján, ott helyben rendezzük őket valamelyik rendezési algoritmussal, majd újra összefűzzük a most már rendezett rész-listákat. Közel áll az emberi gondolkodáshoz abban, hogy hatékonyan lebontja a feladatot egyszerűbben megoldhatóakra, és aztán alulról felfelé építi fel az eredményt. </p>
+            </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Érdekességek</a></li>
+                <li><a href="#">Képek</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu" >
+    </div>
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+        
+menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right="0";
+                menu.scr == "close.png"
+            }
+            else{
+                sideNav.style.right = "=-250px";
+                menu.scr == "menu.png"
+            }
+        }
+    </script>
+</body>
+</html>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+    
+menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0";
+            menu.scr == "close.png"
+        }
+        else{
+            sideNav.style.right = "=-250px";
+            menu.scr == "menu.png"
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

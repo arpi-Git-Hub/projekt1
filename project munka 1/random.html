@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="project.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> 
+   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap">
+    <title>Rendezesi Algoritmusok,Random szam generalasa</title>
+</head>
+<body>
+    <section id="banner2">
+       <div class="banner-text">
+           <h1>Véletlenszám-generálás</h1>
+         
+       </div>
+       <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index (1).html">Home</a></li>
+                <li><a href="erd.html">Fogalmak</a></li>
+                <li><a href="kep.html">Képek</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <h1 id="aag">Véletlenszám-generátorok</h1>
+    <p id="aas">Véletlen számok létrehozásának eszközei a hardveres és szoftveres véletlengenerátorok. Az előbbi kvantumfolyamatokon alapul, például radioaktív bomlás vagy zajdióda jelek, míg az utóbbiak számítógépes algoritmusokat használnak.</p>
+    
+    <h1 id="aag">Hardveres véletlengenerátorok</h1>
+    <p id="aas">A hardveres RNG példája Helmut Schmidt saját generátora, amely radioaktív elektronok ütéseivel hoz létre véletlen számokat. Ma zajdiódás RNG-ket használnak, amelyek referenciaszinttel összehasonlítva generálnak számokat.</p>
+    
+    <h1 id="aag">Algoritmikus véletlengenerátorok</h1>
+    <p id="aas">Az algoritmikus RNG determinisztikus algoritmusokat alkalmaz, amelyekből véletlen számsorozatokat hoznak létre, például nullák és egyek váltakozásával. Ezek a számsorozatok ciklikusan ismétlődnek, de hosszuk nagyon nagy, így gyakorlatban nem befolyásolják a véletlenszerűséget.</p>
+    
+    <h1 id="aag">Hibalehetőségek és ellenőrzés</h1>
+    <p id="aas">A véletlenszám-generátoroknak kis hibával kell működniük parapszichológiai kísérletekhez. Környezeti tényezők, mint a hőmérséklet vagy elektromágneses hullámok, befolyásolhatják a hardveres generátorok működését. Az ellenőrzésnek két típusa van: általános és kísérlethez csatolt. Mindkettő segít a véletlenszerűség biztosításában.</p>
+       
+            </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fogalmak.html">Fogalmak</a></li>
+                <li><a href="kep.html">Képek</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu" >
+    </div>
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+        
+menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right="0";
+                menu.scr == "close.png"
+            }
+            else{
+                sideNav.style.right = "=-250px";
+                menu.scr == "menu.png"
+            }
+        }
+    </script>
+</body>
+</html>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+    
+menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0";
+            menu.scr == "close.png"
+        }
+        else{
+            sideNav.style.right = "=-250px";
+            menu.scr == "menu.png"
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
